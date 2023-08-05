@@ -1,0 +1,383 @@
+<html>
+<head>
+<title>D:\uploadedFiles\3d51a2ec4a5aa087d3172bcf371ba5-4255de9ef1c58\p1h733m4npstd1vceleioh5bsh4.pdf</title>
+<style type="text/css">
+<!--
+body { font-family: Arial; font-size: 18.9px }
+.pos { position: absolute; z-index: 0; left: 0px; top: 0px }
+-->
+</style>
+</head>
+<body>
+<nobr><nowrap>
+<div class="pos" id="_0:0" style="top:0">
+<img name="_1170:827" src="page_001.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_100:112" style="top:112;left:100">
+<span id="_19.1" style=" font-family:Times New Roman; font-size:19.1px; color:#323232">
+                    AUTOMATIC CAR PARKING ARUDINO  PROGRAM</span>
+</div>
+<div class="pos" id="_100:199" style="top:199;left:100">
+<span id="_17.5" style=" font-family:Arial; font-size:17.5px; color:#323232">
+#include   </span>
+</div>
+<div class="pos" id="_100:241" style="top:241;left:100">
+<span id="_17.5" style=" font-family:Arial; font-size:17.5px; color:#323232">
+Servo gate;       </span>
+</div>
+<div class="pos" id="_100:283" style="top:283;left:100">
+<span id="_18.7" style=" font-family:Arial; font-size:18.7px; color:#323232">
+int slot1 = 5;  </span>
+</div>
+<div class="pos" id="_100:324" style="top:324;left:100">
+<span id="_18.7" style=" font-family:Arial; font-size:18.7px; color:#323232">
+int slot2 = 4;  </span>
+</div>
+<div class="pos" id="_100:366" style="top:366;left:100">
+<span id="_16.3" style=" font-family:Arial; font-size:16.3px; color:#323232">
+int gateSensor = 3; </span>
+</div>
+<div class="pos" id="_100:408" style="top:408;left:100">
+<span id="_17.8" style=" font-family:Arial; font-size:17.8px; color:#323232">
+int slot1_l = 13;</span>
+</div>
+<div class="pos" id="_100:449" style="top:449;left:100">
+<span id="_17.8" style=" font-family:Arial; font-size:17.8px; color:#323232">
+int slot2_l = 12;</span>
+</div>
+<div class="pos" id="_100:491" style="top:491;left:100">
+<span id="_16.3" style=" font-family:Arial; font-size:16.3px; color:#323232">
+int gate_grn = 11;</span>
+</div>
+<div class="pos" id="_100:533" style="top:533;left:100">
+<span id="_16.3" style=" font-family:Arial; font-size:16.3px; color:#323232">
+int gate_red = 10;</span>
+</div>
+<div class="pos" id="_100:574" style="top:574;left:100">
+<span id="_16.9" style=" font-family:Arial; font-size:16.9px; color:#323232">
+void setup() </span>
+</div>
+<div class="pos" id="_100:616" style="top:616;left:100">
+<span id="_16.9" style=" font-family:Arial; font-size:16.9px; color:#323232">
+{</span>
+</div>
+<div class="pos" id="_100:658" style="top:658;left:100">
+<span id="_17.9" style=" font-family:Arial; font-size:17.9px; color:#323232">
+ gate.attach(7);     </span>
+</div>
+<div class="pos" id="_100:699" style="top:699;left:100">
+<span id="_15.6" style=" font-family:Arial; font-size:15.6px; color:#323232">
+ pinMode(slot1,INPUT);  </span>
+</div>
+<div class="pos" id="_100:741" style="top:741;left:100">
+<span id="_15.2" style=" font-family:Arial; font-size:15.2px; color:#323232">
+ pinMode(slot2,INPUT);</span>
+</div>
+<div class="pos" id="_100:783" style="top:783;left:100">
+<span id="_14.6" style=" font-family:Arial; font-size:14.6px; color:#323232">
+ pinMode(gateSensor,INPUT);</span>
+</div>
+<div class="pos" id="_100:824" style="top:824;left:100">
+<span id="_14.6" style=" font-family:Arial; font-size:14.6px; color:#323232">
+ pinMode(slot1_l,OUTPUT);</span>
+</div>
+<div class="pos" id="_100:866" style="top:866;left:100">
+<span id="_14.6" style=" font-family:Arial; font-size:14.6px; color:#323232">
+ pinMode(slot2_l,OUTPUT);</span>
+</div>
+<div class="pos" id="_100:908" style="top:908;left:100">
+<span id="_14.2" style=" font-family:Arial; font-size:14.2px; color:#323232">
+ pinMode(gate_grn,OUTPUT);</span>
+</div>
+<div class="pos" id="_100:949" style="top:949;left:100">
+<span id="_14.2" style=" font-family:Arial; font-size:14.2px; color:#323232">
+ pinMode(gate_red,OUTPUT);</span>
+</div>
+<div class="pos" id="_100:991" style="top:991;left:100">
+<span id="_17.2" style=" font-family:Arial; font-size:17.2px; color:#323232">
+ Serial.begin(9600);    </span>
+</div>
+<div class="pos" id="_100:1033" style="top:1033;left:100">
+<span id="_16.5" style=" font-family:Arial; font-size:16.5px; color:#323232">
+}</span>
+</div>
+<div class="pos" id="_0:0" style="top:1170">
+<img name="_1170:827" src="page_002.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_100:1281" style="top:1281;left:100">
+<span id="_17.3" style=" font-family:Arial; font-size:17.3px; color:#323232">
+void loop() </span>
+</div>
+<div class="pos" id="_100:1323" style="top:1323;left:100">
+<span id="_16.5" style=" font-family:Arial; font-size:16.5px; color:#323232">
+{</span>
+</div>
+<div class="pos" id="_100:1365" style="top:1365;left:100">
+<span id="_17.0" style=" font-family:Arial; font-size:17.0px; color:#323232">
+    if(   !(digitalRead(gateSensor)) && digitalRead(slot1) && digitalRead(slot2))   </span>
+</div>
+<div class="pos" id="_100:1406" style="top:1406;left:100">
+<span id="_21.0" style=" font-family:Arial; font-size:21.0px; color:#323232">
+     {</span>
+</div>
+<div class="pos" id="_100:1448" style="top:1448;left:100">
+<span id="_16.8" style=" font-family:Arial; font-size:16.8px; color:#323232">
+      Serial.println("Welcome, Available: sLOT1, sLOT2");  //print slot1 and slo2 </span>
+</div>
+<div class="pos" id="_100:1469" style="top:1469;left:100">
+<span id="_15.8" style=" font-family:Arial; font-size:15.8px; color:#323232">
+available</span>
+</div>
+<div class="pos" id="_100:1511" style="top:1511;left:100">
+<span id="_17.6" style=" font-family:Arial; font-size:17.6px; color:#323232">
+      digitalWrite(slot1_l,HIGH);</span>
+</div>
+<div class="pos" id="_100:1552" style="top:1552;left:100">
+<span id="_17.6" style=" font-family:Arial; font-size:17.6px; color:#323232">
+      digitalWrite(slot2_l,HIGH);</span>
+</div>
+<div class="pos" id="_100:1594" style="top:1594;left:100">
+<span id="_17.6" style=" font-family:Arial; font-size:17.6px; color:#323232">
+      delay(1000);</span>
+</div>
+<div class="pos" id="_100:1636" style="top:1636;left:100">
+<span id="_16.8" style=" font-family:Arial; font-size:16.8px; color:#323232">
+      digitalWrite(gate_grn,HIGH);</span>
+</div>
+<div class="pos" id="_100:1677" style="top:1677;left:100">
+<span id="_18.3" style=" font-family:Arial; font-size:18.3px; color:#323232">
+       gate.write(75); </span>
+</div>
+<div class="pos" id="_100:1719" style="top:1719;left:100">
+<span id="_21.0" style=" font-family:Arial; font-size:21.0px; color:#323232">
+     }</span>
+</div>
+<div class="pos" id="_100:1761" style="top:1761;left:100">
+<span id="_16.9" style=" font-family:Arial; font-size:16.9px; color:#323232">
+     if( !(digitalRead(gateSensor)) && !(digitalRead(slot1)) && </span>
+</div>
+<div class="pos" id="_100:1781" style="top:1781;left:100">
+<span id="_16.9" style=" font-family:Arial; font-size:16.9px; color:#323232">
+digitalRead(slot2))  </span>
+</div>
+<div class="pos" id="_100:1823" style="top:1823;left:100">
+<span id="_21.3" style=" font-family:Arial; font-size:21.3px; color:#323232">
+      {</span>
+</div>
+<div class="pos" id="_100:1865" style="top:1865;left:100">
+<span id="_17.4" style=" font-family:Arial; font-size:17.4px; color:#323232">
+          Serial.println("Welcome, Available: sLOT2");  // slo2 available</span>
+</div>
+<div class="pos" id="_100:1906" style="top:1906;left:100">
+<span id="_17.4" style=" font-family:Arial; font-size:17.4px; color:#323232">
+          digitalWrite(slot1_l,LOW);</span>
+</div>
+<div class="pos" id="_100:1948" style="top:1948;left:100">
+<span id="_18.1" style=" font-family:Arial; font-size:18.1px; color:#323232">
+          digitalWrite(slot2_l,HIGH);</span>
+</div>
+<div class="pos" id="_100:1990" style="top:1990;left:100">
+<span id="_18.1" style=" font-family:Arial; font-size:18.1px; color:#323232">
+          delay(1000);</span>
+</div>
+<div class="pos" id="_100:2031" style="top:2031;left:100">
+<span id="_17.3" style=" font-family:Arial; font-size:17.3px; color:#323232">
+          digitalWrite(gate_grn,HIGH);</span>
+</div>
+<div class="pos" id="_100:2073" style="top:2073;left:100">
+<span id="_18.6" style=" font-family:Arial; font-size:18.6px; color:#323232">
+         gate.write(75); </span>
+</div>
+<div class="pos" id="_100:2115" style="top:2115;left:100">
+<span id="_21.3" style=" font-family:Arial; font-size:21.3px; color:#323232">
+      }</span>
+</div>
+<div class="pos" id="_100:2156" style="top:2156;left:100">
+<span id="_21.3" style=" font-family:Arial; font-size:21.3px; color:#323232">
+      </span>
+</div>
+<div class="pos" id="_0:0" style="top:2340">
+<img name="_1170:827" src="page_003.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_100:2451" style="top:2451;left:100">
+<span id="_16.9" style=" font-family:Arial; font-size:16.9px; color:#323232">
+       if( !(digitalRead(gateSensor)) && digitalRead(slot1) && </span>
+</div>
+<div class="pos" id="_100:2472" style="top:2472;left:100">
+<span id="_18.1" style=" font-family:Arial; font-size:18.1px; color:#323232">
+!(digitalRead(slot2)))     </span>
+</div>
+<div class="pos" id="_100:2514" style="top:2514;left:100">
+<span id="_21.5" style=" font-family:Arial; font-size:21.5px; color:#323232">
+       {</span>
+</div>
+<div class="pos" id="_100:2556" style="top:2556;left:100">
+<span id="_17.2" style=" font-family:Arial; font-size:17.2px; color:#323232">
+         Serial.println("Welcome, Available: sLOT1");  </span>
+</div>
+<div class="pos" id="_100:2597" style="top:2597;left:100">
+<span id="_18.1" style=" font-family:Arial; font-size:18.1px; color:#323232">
+          digitalWrite(slot1_l,HIGH);</span>
+</div>
+<div class="pos" id="_100:2639" style="top:2639;left:100">
+<span id="_18.1" style=" font-family:Arial; font-size:18.1px; color:#323232">
+          digitalWrite(slot2_l,LOW);</span>
+</div>
+<div class="pos" id="_100:2681" style="top:2681;left:100">
+<span id="_18.1" style=" font-family:Arial; font-size:18.1px; color:#323232">
+          delay(1000);</span>
+</div>
+<div class="pos" id="_100:2722" style="top:2722;left:100">
+<span id="_17.2" style=" font-family:Arial; font-size:17.2px; color:#323232">
+         digitalWrite(gate_grn,HIGH);</span>
+</div>
+<div class="pos" id="_100:2764" style="top:2764;left:100">
+<span id="_18.6" style=" font-family:Arial; font-size:18.6px; color:#323232">
+         gate.write(75); </span>
+</div>
+<div class="pos" id="_100:2806" style="top:2806;left:100">
+<span id="_20.4" style=" font-family:Arial; font-size:20.4px; color:#323232">
+          delay(100);               </span>
+</div>
+<div class="pos" id="_100:2847" style="top:2847;left:100">
+<span id="_21.5" style=" font-family:Arial; font-size:21.5px; color:#323232">
+       }</span>
+</div>
+<div class="pos" id="_100:2889" style="top:2889;left:100">
+<span id="_21.5" style=" font-family:Arial; font-size:21.5px; color:#323232">
+      </span>
+</div>
+<div class="pos" id="_100:2931" style="top:2931;left:100">
+<span id="_17.1" style=" font-family:Arial; font-size:17.1px; color:#323232">
+        if( !(digitalRead(gateSensor)) && !(digitalRead(slot1)) && </span>
+</div>
+<div class="pos" id="_100:2951" style="top:2951;left:100">
+<span id="_17.1" style=" font-family:Arial; font-size:17.1px; color:#323232">
+!(digitalRead(slot2)))</span>
+</div>
+<div class="pos" id="_100:2993" style="top:2993;left:100">
+<span id="_23.2" style=" font-family:Arial; font-size:23.2px; color:#323232">
+         {</span>
+</div>
+<div class="pos" id="_100:3035" style="top:3035;left:100">
+<span id="_17.9" style=" font-family:Arial; font-size:17.9px; color:#323232">
+           Serial.println("Welcome, Parking Full");</span>
+</div>
+<div class="pos" id="_100:3076" style="top:3076;left:100">
+<span id="_17.9" style=" font-family:Arial; font-size:17.9px; color:#323232">
+            digitalWrite(slot1_l,LOW);</span>
+</div>
+<div class="pos" id="_100:3118" style="top:3118;left:100">
+<span id="_17.9" style=" font-family:Arial; font-size:17.9px; color:#323232">
+            digitalWrite(slot2_l,LOW);</span>
+</div>
+<div class="pos" id="_100:3160" style="top:3160;left:100">
+<span id="_17.9" style=" font-family:Arial; font-size:17.9px; color:#323232">
+            delay(1000);</span>
+</div>
+<div class="pos" id="_100:3201" style="top:3201;left:100">
+<span id="_17.9" style=" font-family:Arial; font-size:17.9px; color:#323232">
+            digitalWrite(gate_red,HIGH);</span>
+</div>
+<div class="pos" id="_100:3243" style="top:3243;left:100">
+<span id="_18.9" style=" font-family:Arial; font-size:18.9px; color:#323232">
+            delay(100);</span>
+</div>
+<div class="pos" id="_100:3285" style="top:3285;left:100">
+<span id="_17.2" style=" font-family:Arial; font-size:17.2px; color:#323232">
+            digitalWrite(gate_red,LOW);</span>
+</div>
+<div class="pos" id="_100:3326" style="top:3326;left:100">
+<span id="_18.9" style=" font-family:Arial; font-size:18.9px; color:#323232">
+            delay(100);</span>
+</div>
+<div class="pos" id="_100:3368" style="top:3368;left:100">
+<span id="_17.5" style=" font-family:Arial; font-size:17.5px; color:#323232">
+            digitalWrite(gate_red,HIGH);</span>
+</div>
+<div class="pos" id="_0:0" style="top:3510">
+<img name="_1170:827" src="page_004.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_100:3621" style="top:3621;left:100">
+<span id="_18.9" style=" font-family:Arial; font-size:18.9px; color:#323232">
+            delay(100);</span>
+</div>
+<div class="pos" id="_100:3663" style="top:3663;left:100">
+<span id="_17.2" style=" font-family:Arial; font-size:17.2px; color:#323232">
+            digitalWrite(gate_red,LOW);</span>
+</div>
+<div class="pos" id="_100:3705" style="top:3705;left:100">
+<span id="_23.6" style=" font-family:Arial; font-size:23.6px; color:#323232">
+            </span>
+</div>
+<div class="pos" id="_100:3746" style="top:3746;left:100">
+<span id="_23.6" style=" font-family:Arial; font-size:23.6px; color:#323232">
+            </span>
+</div>
+<div class="pos" id="_100:3788" style="top:3788;left:100">
+<span id="_23.2" style=" font-family:Arial; font-size:23.2px; color:#323232">
+         }</span>
+</div>
+<div class="pos" id="_100:3830" style="top:3830;left:100">
+<span id="_23.6" style=" font-family:Arial; font-size:23.6px; color:#323232">
+            </span>
+</div>
+<div class="pos" id="_100:3871" style="top:3871;left:100">
+<span id="_16.7" style=" font-family:Arial; font-size:16.7px; color:#323232">
+  if( digitalRead(gateSensor))</span>
+</div>
+<div class="pos" id="_100:3913" style="top:3913;left:100">
+<span id="_18.0" style=" font-family:Arial; font-size:18.0px; color:#323232">
+        { Serial.println("Welcome"); </span>
+</div>
+<div class="pos" id="_100:3955" style="top:3955;left:100">
+<span id="_18.8" style=" font-family:Arial; font-size:18.8px; color:#323232">
+          gate.write(5);       //gate close</span>
+</div>
+<div class="pos" id="_100:3996" style="top:3996;left:100">
+<span id="_17.6" style=" font-family:Arial; font-size:17.6px; color:#323232">
+         digitalWrite(slot1_l,LOW);</span>
+</div>
+<div class="pos" id="_100:4038" style="top:4038;left:100">
+<span id="_17.6" style=" font-family:Arial; font-size:17.6px; color:#323232">
+         digitalWrite(slot2_l,LOW);</span>
+</div>
+<div class="pos" id="_100:4080" style="top:4080;left:100">
+<span id="_16.8" style=" font-family:Arial; font-size:16.8px; color:#323232">
+         digitalWrite(gate_red,LOW);</span>
+</div>
+<div class="pos" id="_100:4121" style="top:4121;left:100">
+<span id="_17.2" style=" font-family:Arial; font-size:17.2px; color:#323232">
+         digitalWrite(gate_grn,HIGH);</span>
+</div>
+<div class="pos" id="_100:4163" style="top:4163;left:100">
+<span id="_18.4" style=" font-family:Arial; font-size:18.4px; color:#323232">
+         delay(100);</span>
+</div>
+<div class="pos" id="_100:4205" style="top:4205;left:100">
+<span id="_16.9" style=" font-family:Arial; font-size:16.9px; color:#323232">
+         digitalWrite(gate_grn,LOW);</span>
+</div>
+<div class="pos" id="_100:4246" style="top:4246;left:100">
+<span id="_18.4" style=" font-family:Arial; font-size:18.4px; color:#323232">
+         delay(100);</span>
+</div>
+<div class="pos" id="_100:4288" style="top:4288;left:100">
+<span id="_22.1" style=" font-family:Arial; font-size:22.1px; color:#323232">
+         </span>
+</div>
+<div class="pos" id="_100:4330" style="top:4330;left:100">
+<span id="_22.1" style=" font-family:Arial; font-size:22.1px; color:#323232">
+        </span>
+</div>
+<div class="pos" id="_100:4371" style="top:4371;left:100">
+<span id="_21.7" style=" font-family:Arial; font-size:21.7px; color:#323232">
+        }</span>
+</div>
+<div class="pos" id="_100:4413" style="top:4413;left:100">
+<span id="_20.1" style=" font-family:Arial; font-size:20.1px; color:#323232">
+  </span>
+</div>
+<div class="pos" id="_100:4455" style="top:4455;left:100">
+<span id="_16.5" style=" font-family:Arial; font-size:16.5px; color:#323232">
+}</span>
+</div>
+</nowrap></nobr>
+</body>
+</html>
